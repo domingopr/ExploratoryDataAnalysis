@@ -23,7 +23,9 @@ with(data3, plot(DateTime,Global_active_power,type="l",ylab = "Global Active Pow
 
 ## To plot the next in  lower left 
 with(data3, plot(DateTime,Sub_metering_1,type = "n",ylab="Energy Sub metering", xlab=""))   ## Draw  Plot 3
-legend("topright",lty = c(1, 1, 1),col= c("black","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3")) 
+legend("topright",lty = c(1, 1, 1),col= c("black","red","blue"),cex=0.5,text.width =strwidth("Sub_metering_1"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3")) 
+
+
 points(data3$DateTime, data3$Sub_metering_1,type="l", col="black")
 points(data3$DateTime, data3$Sub_metering_2,type="l", col="red")
 points(data3$DateTime, data3$Sub_metering_3,type="l", col="blue")
