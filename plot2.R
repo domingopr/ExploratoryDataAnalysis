@@ -11,10 +11,10 @@ data3$DateTime <- as.POSIXct(paste(data3$Date, data3$Time), format="%d/%m/%Y %H:
 
 ## PLot 2
 
-par(mar = c(4,4,4,2))
+par(mar = c(6,4,4,2))
 
 with(data3, plot(DateTime,Global_active_power,type="l",ylab = "Global Active Power (kilowatt)",xlab = " "))   ## Draw  Plot 2
 
-dev.copy(png, file = "plot2.png")
+dev.copy(png, file = "plot2.png",width=480, height=480)
 dev.off()
 

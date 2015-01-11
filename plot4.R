@@ -36,5 +36,5 @@ with(data3, plot(DateTime,Voltage,type="l",ylab = "Voltage",xlab = "dateTime")) 
 with(data3, plot(DateTime,Global_reactive_power,type="l",ylab = "Global_reactive_power",xlab = "dateTime"))   ## Draw  Plot 4b
 
 
-dev.copy(png, file = "plot4.png")
+dev.copy(png, file = "plot4.png",width=480, height=480)
 dev.off()

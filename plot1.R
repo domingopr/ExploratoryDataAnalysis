@@ -11,9 +11,9 @@ data3$DateTime <- as.POSIXct(paste(data3$Date, data3$Time), format="%d/%m/%Y %H:
 
 
 ## PLot 1
-par(mar = c(4,4,4,2))
+par(mar = c(6,4,4,2))
 
 hist(data3$Global_active_power,main = "Global Active Power",xlab = "Global Active Power (kilowatts)",col = "Red")  ## Draw  Plot 1
-dev.copy(png, file = "plot1.png")
+dev.copy(png, file = "plot1.png",width=480, height=480)
 dev.off()
 
